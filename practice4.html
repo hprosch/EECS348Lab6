@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>EECS 348 Lab 6: Hannah Prosch</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div id="wrapper">
+			<main>
+                <!--Practice Four: PHP Multiplication Table-->
+				<h1>EECS 348 Lab 6: Hannah Prosch</h1>
+
+                <form method="POST">
+                <label for="password2">Enter the desired size of the multiplication table: </label>
+                <input type="text" name="tableSize">
+                <input type="Submit" value="Submit">
+
+                <?php
+                if($_POST) {
+                    $tableSize = $_POST["tableSize"];
+                    echo "<table border='1' style='border-collapse:collapse'>";
+                    for($i = 0; $i <= $tableSize; $i++) {
+                        echo "<tr>";
+                        for($j = 0; $j <= $tableSize; $j++) {
+                            $product = $j * $i;
+                            if ($i == 0) {
+                                $product = $j;
+                            }
+                            if ($j == 0) {
+                                $product = $i;
+                            }
+                            if ($i == 0 && $j == 0) {
+                                $product = "";
+                            }
+
+                            echo "<td> $product </td>";
+                        }
+                        echo "</tr>";
+                    }
+                    echo "</table>";
+                }
+                ?>
+			</main>
+			<footer>
+				<p>Copyright © 2024 Hannah Prosch</p>
+			</footer>
+		</div>
+	</body>
+</html>

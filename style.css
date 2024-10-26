@@ -1,0 +1,165 @@
+/*Hannah Prosch*/
+
+body {
+    background-color: #e9f5f9;
+}
+
+img {
+	border-radius: 8px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 20%;
+	height: auto;	
+}
+
+/*Mobile & Universal Styles First*/ /*
+html, body {
+	font-family: 'Oswald', Arial, Helvetica, sans-serif;
+}
+
+body {
+	background-color: #d67012;
+	background-image: url("/static/kibbles.png");
+	margin: 0;
+}
+
+#wrapper {
+	background-color: white;
+	background: rgba(255,255,255,0.75);
+	height: auto;
+	padding: 1em;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+input {
+	width: 3.5em;
+	display: inline-block;
+	text-align: right;
+}
+
+label {
+	padding-right: 1em;
+	display: inline-block;
+	min-width: 5.5em;
+}
+
+table {
+	border-collapse: collapse;
+	text-align: left;
+}
+
+th {
+	background-color: #d67012;
+	color: #452207;
+}
+
+th, td {
+	padding: 0.5em;
+}
+
+tr:nth-child(odd){background-color: #faf0e7}
+tr:nth-child(even){background-color: white}
+
+h1 {
+	color: #452207;
+	margin: auto;
+	text-align: center;
+}
+
+h3 {
+	color: #452207;
+	text-align: center;
+}
+
+p {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+	display: none;
+}
+
+footer {
+	color: #452207;
+	font-size: small;
+	text-align: center;
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+}
+
+.hidden {
+	display: none;
+}
+*/
+
+
+/*Tablet-Sized Styles*/ /*
+@media only screen and (min-width: 35em) {
+	body {
+		opacity: 1;
+		background-image: none;
+	}
+	#wrapper {
+		background: rgba(255,255,255,1);
+		padding: 0;
+		position: relative;
+		top: 0;
+		-ms-transform: translateY(0%);
+		transform: translateY(0%);
+		height: 50%;
+		margin-top: 10%;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1;
+	}
+	img {
+		display: inline;
+		float: left;
+		width: 45%;
+		margin-right: auto;
+		height: auto;
+		padding-right: 1em;
+	}
+	h1 {
+		text-align: left;
+	}
+	#result {
+		width: 12.5em;
+	}
+}*/
+
+/*Desktop Styles*//*
+@media only screen and (min-width: 65em) {
+	#wrapper {
+		width: 80%;
+		margin-right: auto;
+		margin-left: auto;*/
+		/*Sets wrapper to viewport height:*//*
+		height: 100vh;
+		padding-right: 1em;
+		margin-top: 0;*/
+		/*Remove 2 column layout:*//*
+		display: block;
+		grid-template-columns: none;
+		grid-template-rows: none;
+	}*/
+
+	/*img {
+		/*Sets image to viewport height:*//*
+		height: 100vh;
+		width: auto;
+	}*/
+
+	/*.center {
+		display: flex;
+		justify-content: center;
+	}*/
+
+/*}*/
